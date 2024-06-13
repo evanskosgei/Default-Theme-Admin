@@ -19,7 +19,7 @@ export default function SignInForm() {
   const onSubmit = async (values) => {
     try {
       const { data } = await mtaApi.auth.login(values);
-      if (data.status !== 200) throw new Error(data.description);
+      if (data.message !== "Successful Login") throw new Error(data.description);
       setToken(data.access_token);
       setUser(data);
     } catch (error) {
@@ -39,9 +39,9 @@ export default function SignInForm() {
           <div className="relative">
             <input
               type="email"
-              id="username"
-              name="username"
-              {...register("username")}
+              id="email"
+              name="email"
+              {...register("email")}
               autoComplete="current-username"
               className="py-2 px-3 block w-full border-gray-200 rounded-sm text-sm focus:border-primary focus:ring-primary dark:bg-bgdark dark:border-white/10 dark:text-white/70"
               required
@@ -72,7 +72,7 @@ export default function SignInForm() {
             />
           </div>
         </div>
-        <div className="flex items-center">
+        {/* <div className="flex items-center">
           <div className="flex">
             <input
               id="remember-me"
@@ -87,7 +87,7 @@ export default function SignInForm() {
               Remember me
             </label>
           </div>
-        </div>
+        </div> */}
         <button
           type="submit"
           disabled={isSubmitting}

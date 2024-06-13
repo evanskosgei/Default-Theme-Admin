@@ -1,7 +1,6 @@
 import React, { Fragment, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-
 import SignInForm from "./components/SignInForm";
 import ALLImages from "../../common/imagesdata";
 
@@ -12,7 +11,7 @@ const SignInCover2 = () => {
       rootDiv.className = "grid grid-cols-12 gap-6 w-full";
     }
     return () => {
-      rootDiv.className = ""; // Remove the className when component unmounts
+      rootDiv.className = "";
     };
   }, []);
 

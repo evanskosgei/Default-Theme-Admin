@@ -111,8 +111,8 @@ const Fileuploads = () => {
                             </div>
                             <div className = "box-body">
                                
-                                <FilePond className = "basic-filepond" accepted-file-types={["application/pdf","image/png", "image/jpeg", "image/gif"]}
-                                server="/api" allowReorder={true} files={files} onupdatefiles={setFiles} allowMultiple={false} allowImagePreview={true} maxFiles={10} name="filepond"  
+                                <FilePond className = "basic-filepond" accepted-file-types={["image/*"]}
+                                allowReorder={true} files={files} onupdatefiles={setFiles} allowMultiple={false} allowImagePreview={true} maxFiles={10} name="filepond"  
                                 labelIdle='Drag & Drop your files or <span className="filepond--label-action">Browse</span>'/>
                             </div>
                         </div>
@@ -124,8 +124,8 @@ const Fileuploads = () => {
                             </div>
                             <div className = "box-body">
                                 
-                                <FilePond className = "multiple-filepond" accepted-file-types={["application/pdf","image/png", "image/jpeg", "image/gif"]}
-                                server="/api" allowReorder={true} files={files} onupdatefiles={setFiles} allowMultiple={true} allowImagePreview={true} maxFiles={10} name="filepond"  
+                                <FilePond className = "multiple-filepond" accepted-file-types={["image/*"]}
+                                allowReorder={true} files={files} onupdatefiles={setFiles} allowMultiple={true} allowImagePreview={true} maxFiles={10} name="filepond"  
                                 labelIdle='Drag & Drop your files or <span className="filepond--label-action">Browse</span>'/>
                             </div>
                         </div>

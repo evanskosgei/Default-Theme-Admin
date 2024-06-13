@@ -5,7 +5,7 @@ import PageHeader from "../../../../layout/layoutsection/pageHeader/pageHeader";
 const EditableRows = () => {
 	return (
 		<div>
-<PageHeader currentpage="Edit Data Table" activepage="Basic Ui" mainpage="Edit Data Table" />
+			<PageHeader currentpage="Edit Data Table" activepage="Basic Ui" mainpage="Edit Data Table" />
 			<div className="grid grid-cols-12 gap-6">
 				<div className="col-span-12">
 					<div className="box xl:overflow-auto">
@@ -14,7 +14,7 @@ const EditableRows = () => {
 						</div>
 						<div className="box-body">
 							<div className="overflow-auto table-bordered">
-								<BasicEditTable/>
+								<BasicEditTable />
 							</div>
 						</div>
 					</div>

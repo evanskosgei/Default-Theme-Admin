@@ -1,7 +1,8 @@
 import axios from "axios";
 import { getToken } from "../../utils/helpers";
 
-const baseURL = "https://stemprotocol.codefremics.com/api/v2";
+const baseURL = "http://127.0.0.1:5000/api/v1/";
+// const baseURL = "https://stemprotocol.codefremics.com/api/v2";
 
 const axiosInstance = axios.create({
   baseURL,

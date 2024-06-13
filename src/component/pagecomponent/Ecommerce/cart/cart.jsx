@@ -36,7 +36,7 @@ const Cart = () => {
 								<table className= "ti-custom-table ti-custom-table-head">
 									<thead className= "">
 										<tr>
-											<th scope="col" className= "!text-sm !p-4 !text-gray-800 dark:!text-white">Product</th>
+											<th scope="col" className= "!text-sm !p-4 !text-gray-800 dark:!text-white">product</th>
 											<th scope="col" className= "!text-sm !p-4 !text-gray-800 dark:!text-white">Price (Each) </th>
 											<th scope="col" className= "!text-sm !p-4 !text-gray-800 dark:!text-white">QNTY</th>
 											<th scope="col" className= "!text-sm !p-4 !text-gray-800 dark:!text-white">Discount</th>
